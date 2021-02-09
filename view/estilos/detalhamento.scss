@@ -1,0 +1,156 @@
+//Variáveis
+$corPadrao: lighten(#2379bd, 0);//Deixa a cor mais 0% claro
+$corBranco: #FFF;
+$corPreto: darken(#333, 0);//deixa 0% mais escuro
+//adjust-hue();
+//saturate(); 
+//complement();
+
+//Funções Mixin
+@mixin fontePadrao {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+@mixin posicao($posicao: relative){
+    position: $posicao;
+}
+
+@mixin alignCenter{
+    text-align: center;
+}
+
+//Padrões únicos
+%padrao-bootstrap{
+    float: unset !important;
+    margin: 1%;
+}
+
+//Função
+@function tamanhoFontePrincipal($multiplicador, $tamanho){
+    @return round($multiplicador * $tamanho);
+}
+
+section{
+    margin-top: 20px;
+}
+
+#menu a{
+    font-weight: bold; 
+    color: $corBranco; 
+    text-decoration: none; 
+    font-size: 14px; 
+    padding: 2px 10px;
+    @include fontePadrao;
+
+    //Nesse caso o & representa o 'a' do link
+    &:hover{
+        border-bottom: 2px $corBranco solid;
+    }
+}
+
+#infoPrincipal{
+    @include posicao(relative);
+    width: 100%;
+    background-color: $corPadrao;
+    height: 400px;
+
+    img{
+        @include posicao(absolute);
+        width: 50%;
+        bottom: 0px;
+        right: 0px;
+        float:right;
+    }
+}
+
+#tema{
+    width: 40%;
+    padding: 20px;
+    @include posicao(absolute);
+    top: 150px;
+    left: 30px;
+
+    label{
+        @include fontePadrao;
+        font-size: 30px;
+        color: $corBranco;
+    }
+
+    p{
+        font-size: 12px;
+        color: $corBranco;
+    }
+}
+
+#logo {
+    @include posicao(absolute);
+    @include alignCenter();
+    @include fontePadrao();
+    font-size: 20px; 
+    color:$corBranco;
+    top: 20px; 
+    width: 250px;
+    line-height: 30px; 
+    height: 30px;
+    left: 3%;
+
+    img{
+        width: 15%;
+        margin-top: -10%;
+        margin-left: -18%;
+    }
+}
+
+.col-sm-6, .col-md-4, .col-lg-2 {
+    @extend %padrao-bootstrap;
+}
+
+.alignCenter{
+    @include alignCenter();
+}
+
+.alignLeft{
+    margin-left: 3.5%;
+}
+
+.temas{
+    font-size: 30px;
+    @include fontePadrao;
+    border-bottom: 4px $corPadrao solid; 
+    margin-left: 6%;
+}
+
+.inlineBlock{
+    display: inline-block;
+}
+
+#foto{
+    border-radius: 15px;
+}
+
+#nomeCompleto{
+    font-size: 20px;
+    @include fontePadrao;
+}
+
+#cidade{
+    font-size: 15px;
+    @include fontePadrao;
+}
+
+#data_atual{
+    font-size: 15px;
+    @include fontePadrao;
+}
+
+//Para rodar o arquivo e compilar para um css:
+//sass index.scss:index.css
+
+//Para verificar toda hora sem ficar colocando o comando no terminal:
+//sass --watch index.scss:index.css
+
+//Caso tenha mais de um arquivo .scss e deseja importar eles para um arquivo, basta utilizar o comando:
+//@include 'outroArquivo.scss'
+//Também funciona sem a extensão:
+//@include 'outroArquivo'
+//Agora se for um arquivo de outra extensão, como o .css, então, deve-se colocar o nome e extensão do arquivo

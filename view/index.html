@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="estilos/index.css">
+    </head>
+    <body>
+        <div class="">
+            <div class="row" id="compartimentos">
+                <header>
+                    <div id="infoPrincipal">
+                        <img src="imagens/imagemPrincipal.png" alt="">
+                    </div>
+                    <div>
+                        <nav>
+                            <div id="logo">
+                                Geovane Barbosa
+                                <img src="imagens/lampada2.png">
+                            </div>
+                            <div id="menu" style="position:absolute; color:#fff; text-align: center; top: 20px; left: 300px;">
+                                <a href="/">HOME</a>
+                                <a href="Programacao">PROGRAMAÇÃO</a>
+                                <a href="/inscricao">INSCRIÇÃO</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div id="tema">
+                        <label>INOVAÇÃO: A GENTE VÊ POR AQUI</label>
+                        <p>
+                            A importância da inovação, vem do conhecimento, é um caso muito importante,
+                            pois através dele, muitas coisas podem se realizar. Em um momento,
+                            quando você adquire conhecimento, surge novas ideias, de repente um design de um website
+                            pode vir a sua mente nessa ideia, e em seguida com ele, você pode abusar da criatividade
+                            e asim, surgindo novas inovações para a realização de projetos.
+                        </p>
+                    </div>
+                </header>
+                <section>
+                    <article>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <span class="temas">Programação</span>
+                                <div class="col-xs-12 alignCenter">
+                                    <div class="divisores col-sm-6 col-md-4 col-lg-2" onclick="informacoes('imagens/icons/nodejs.svg', 'descricaoPrograma1', 'node')" id="node">
+                                        <img class="iconesPrograma" src="imagens/icons/nodejs.svg" alt=""><br>
+                                        <label class="temaPrograma">NodeJs</label><br>
+                                    </div>
+                                    <div class="divisores col-sm-6 col-md-4 col-lg-2" onclick="informacoes('imagens/icons/javascript.svg', 'descricaoPrograma1', 'javascript')" id="javascript">
+                                        <img class="iconesPrograma" src="imagens/icons/javascript.svg" alt=""><br>
+                                        <label class="temaPrograma">Javascript</label><br>
+                                    </div>
+                                    <div class="divisores col-sm-6 col-md-4 col-lg-2" onclick="informacoes('imagens/icons/vue.svg', 'descricaoPrograma1', 'vue')" id="vue">
+                                        <img class="iconesPrograma" src="imagens/icons/vue.svg" alt=""><br>
+                                        <label class="temaPrograma">VueJs</label><br>
+                                    </div>
+                                    <div class="divisores col-sm-6 col-md-4 col-lg-2" onclick="informacoes('imagens/icons/jquery.jpg', 'descricaoPrograma1', 'jsquey')" id="jquery">
+                                        <img class="iconesPrograma" src="imagens/icons/jquery.jpg" alt=""><br>
+                                        <label class="temaPrograma">jQuery</label><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12" id="descricaoPrograma1" prog="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 alignCenter">
+                                    <div class="divisores col-sm-6 col-md-4 col-lg-2" onclick="informacoes('imagens/icons/html.svg', 'descricaoPrograma2', 'html5')" id="html5">
+                                        <img class="iconesPrograma" src="imagens/icons/html.svg" alt=""><br>
+                                        <label class="temaPrograma">HTML5</label><br>
+                                    </div>
+                                    <div class="divisores col-sm-6 col-md-4 col-lg-2" onclick="informacoes('imagens/icons/css.svg', 'descricaoPrograma2', 'css3')" id="css3">
+                                        <img class="iconesPrograma" src="imagens/icons/css.svg" alt=""><br>
+                                        <label class="temaPrograma">CSS3</label><br>
+                                    </div>
+                                    <div class="divisores col-sm-6 col-md-4 col-lg-2" onclick="informacoes('imagens/icons/sass.svg', 'descricaoPrograma2', 'sass')" id="sass">
+                                        <img class="iconesPrograma" src="imagens/icons/sass.svg" alt=""><br>
+                                        <label class="temaPrograma">SASS</label><br>
+                                    </div>
+                                    <div class="divisores col-sm-6 col-md-4 col-lg-2" onclick="informacoes('imagens/icons/bootstrap.png', 'descricaoPrograma2', 'bootstrap')" id="bootstrap">
+                                        <img class="iconesPrograma" src="imagens/icons/bootstrap.png" alt=""><br>
+                                        <label class="temaPrograma">Bootstrap</label><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12" id="descricaoPrograma2" prog="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 alignCenter">
+                                    <div class="divisores col-sm-6 col-md-4 col-lg-2" onclick="informacoes('imagens/icons/gulp.svg', 'descricaoPrograma3', 'gulp')" id="gulp">
+                                        <img class="iconesPrograma" src="imagens/icons/gulp.svg" alt=""><br>
+                                        <label class="temaPrograma">Gulp</label><br>
+                                    </div>
+                                    <div class="divisores col-sm-6 col-md-4 col-lg-2" onclick="informacoes('imagens/icons/git.svg', 'descricaoPrograma3', 'git')" id="git">
+                                        <img class="iconesPrograma" src="imagens/icons/git.svg" alt=""><br>
+                                        <label class="temaPrograma">Git</label><br>
+                                    </div>
+                                    <div class="divisores col-sm-6 col-md-4 col-lg-2" onclick="informacoes('imagens/icons/mysql.png', 'descricaoPrograma3', 'mysql')" id="mysql">
+                                        <img class="iconesPrograma" src="imagens/icons/mysql.png" alt=""><br>
+                                        <label class="temaPrograma">MySQL</label><br>
+                                    </div>
+                                    <div class="divisores col-sm-6 col-md-4 col-lg-2" onclick="informacoes('imagens/icons/json.svg', 'descricaoPrograma3', 'json')" id="json">
+                                        <img class="iconesPrograma" src="imagens/icons/json.svg" alt=""><br>
+                                        <label class="temaPrograma">JSON</label><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12" id="descricaoPrograma3" prog="">
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+
+                    </article>
+                </section>
+                <footer>
+
+                </footer>
+            </div>
+            
+            <!-- <div class="row">
+                <div class="formulario">
+                    <fieldset id="fieldsetForm" class="">
+                        <legend class="">Formulário</legend>
+                        <form action="" method="post">
+                            <input type="text" name="nome form-control is-valid" id="nome" placeholder="Primeiro nome" value="Mark" required>
+                        </form>
+                    </fieldset>
+                </div>
+            </div> -->
+        </div>
+    </body>
+    <script>
+        informacoes = (caminhoArquivo, classe, nome) => {
+            let texto = `Para que tivesse a função de relacionar os dados tornando back end da aplicação, 
+            utilizamos o NodeJs. Além disso, se fez preciso a criação de rotas, com isso, podemos acessar 
+            as diversas áreas do sitebliotecas como o Express e o Body-Parser por exemplo.`
+
+            let adicionarConteudo = `
+                <div class="inlineBlock">
+                    <img src="${caminhoArquivo}" class="iconesPrograma2 inlineBlock"></img>
+                </div>
+                <div class="inlineBlock">
+                    <p>${texto}</p>
+                </div>
+            `
+
+            let caminho = $('#'+classe)
+
+            if(caminho.attr('prog') == nome){
+                caminho.toggle()
+                caminho.attr('prog', '')
+            }else if(caminho.attr('prog') != ''){    
+                caminho.html(adicionarConteudo)
+                caminho.attr('prog', nome)
+            }else{
+                caminho.toggle()
+                caminho.html(adicionarConteudo)
+                caminho.attr('prog', nome)
+            }
+        }
+    </script>
+</html>

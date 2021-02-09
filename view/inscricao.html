@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="estilos/inscricao.css">
+        <script src="validator/validator.min.js"></script>
+    </head>
+    <body>
+        <div class="">
+            <div class="row" id="compartimentos">
+                <header>
+                    <div id="infoPrincipal">
+                        <img src="imagens/imagemPrincipal.png" alt="">
+                    </div>
+                    <div>
+                        <nav>
+                            <div id="logo">
+                                Criatividade
+                                <img src="imagens/lampada2.png"  style="width: 15%; margin-top: -10px; margin-left: -5px;">
+                            </div>
+                            <div id="menu" style="position:absolute; color:#fff; text-align: center; top: 20px; left: 300px;">
+                                <a href="/">HOME</a>
+                                <a href="Programacao">PROGRAMAÇÃO</a>
+                                <a href="/inscricao">INSCRIÇÃO</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div id="tema">
+                        <label>INOVAÇÃO: A GENTE VÊ POR AQUI</label>
+                        <p>
+                            A importância da inovação, vem do conhecimento, é um caso muito importante,
+                            pois através dele, muitas coisas podem se realizar. Em um momento,
+                            quando você adquire conhecimento, surge novas ideias, de repente um design de um website
+                            pode vir a sua mente nessa ideia, e em seguida com ele, você pode abusar da criatividade
+                            e asim, surgindo novas inovações para a realização de projetos.
+                        </p>
+                    </div>
+                </header>
+                <section>
+                    <article>
+                        <div class="container">
+                            <fieldset>
+                                <legend>Informe seus dados e informações para teste:</legend>
+                                <form action="/formulario" role="form" data-toggle="validator" method="post" id="formPrincipal">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="col-sm-4 form-group">
+                                                <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome completo" required>
+                                            </div>
+                                            <div class="col-sm-4 form-group">
+                                                <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Cidade" required>
+                                            </div>
+                                            <div class="col-sm-4 form-group has-feedback">
+                                                <input type="text" pattern="\d{1,2}/\d{1,2}/\d{4}" maxlength="10" class="form-control" data-error="Por favor, informe uma data corretamente." name="data_atual" id="data_atual" placeholder="Data atual" required>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="col-sm-8 form-group">
+                                                <input type="file" class="form-control" src="imagensWeb" accept=".jpg, .jpeg, .png, .gif" name="imagem" alt="Selecione uma imagem de perfil" required>
+                                            </div>
+                                            <div class="form-group col-sm-4">
+                                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </fieldset>
+                        </div>
+                    </article>
+                    <article>
+
+                    </article>
+                </section>
+                <footer>
+
+                </footer>
+            </div>
+        </div>
+        <script src="validator/validator.min.js"></script>
+        <script src="inscricao.js"></script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "projetonode",
+  "version": "1.0.0",
+  "description": "Conexão com NODE",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "consign": "^0.1.6",
+    "express": "^4.17.1",
+    "filereader": "^0.10.3",
+    "gulp": "^4.0.2",
+    "moment": "^2.29.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.6",
+    "sass": "^1.32.4",
+    "vue-cli": "^2.9.6"
+  },
+  "devDependencies": {
+    "gulp-imagemin": "^7.1.0"
+  }
+}
